@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <title>ARMOR | Cerraduras de Alta Seguridad en Mexicali, BC</title>
+  <meta name="description" content="Venta e instalación de cerraduras de alta seguridad: reconocimiento facial, huella dactilar, tarjeta RFID y control por app. Protege tu hogar o negocio en Mexicali, BC con ARMOR." />
+  <meta name="keywords" content="cerraduras de alta seguridad Mexicali, cerraduras digitales Mexicali, cerradura biométrica, cerradura reconocimiento facial, cerradura huella dactilar, instalación de cerraduras Mexicali, cerrajería de alta seguridad, cerraduras inteligentes, puertas de seguridad Mexicali, ARMOR cerraduras" />
+  <meta property="og:title" content="ARMOR | Cerraduras de Alta Seguridad en Mexicali, BC" />
+  <meta property="og:description" content="Venta e instalación de cerraduras de alta seguridad con tecnología biométrica para hogares y negocios en Mexicali, Baja California." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:image" content="imagenes/cerradura-facial-instalada.jpg" />
+  <link rel="icon" type="image/png" href="imagenes/logo-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  PRELOADER PREMIUM                                          -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div id="preloader" class="preloader">
+  <div class="preloader-bg"></div>
+  <div class="preloader-particles" id="preloaderParticles"></div>
+  <div class="preloader-content">
+    <div class="preloader-logo-wrap">
+      <div class="preloader-rings">
+        <div class="p-ring p-ring-1"></div>
+        <div class="p-ring p-ring-2"></div>
+        <div class="p-ring p-ring-3"></div>
+      </div>
+      <div class="preloader-logo-circle">
+        <img src="imagenes/logo-icon.png" alt="ARMOR" class="preloader-logo-img" />
+      </div>
+    </div>
+    <div class="preloader-brand-name">
+      <span class="p-name" id="pName">ARMOR</span>
+      <span class="p-mg" id="pMg">CERRADURAS DE ALTA SEGURIDAD</span>
+    </div>
+    <p class="preloader-tagline-text">Protección · Tecnología · Confianza</p>
+    <div class="preloader-progress-wrap">
+      <div class="preloader-progress-bar" id="progressBar"></div>
+    </div>
+    <div class="preloader-percent" id="progressPercent">0%</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  HEADER / NAVBAR                                            -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<header id="navbar" class="navbar">
+  <div class="navbar-inner">
+    <a href="#inicio" class="nav-logo" aria-label="ARMOR">
+      <img src="imagenes/logo-icon.png" alt="Escudo ARMOR" class="nav-logo-img" />
+      <div class="nav-logo-text">
+        <span class="nav-brand-name">Cerraduras de Alta Seguridad</span>
+        <span class="nav-brand-mg">ARMOR</span>
+      </div>
+    </a>
+    <nav class="nav-links" aria-label="Menú principal">
+      <a href="#inicio"      class="nav-link">Inicio</a>
+      <a href="#servicios"   class="nav-link">Cerraduras</a>
+      <a href="#beneficios"  class="nav-link">Beneficios</a>
+      <a href="#proceso"     class="nav-link">Proceso</a>
+      <a href="#contacto"    class="nav-link">Contacto</a>
+    </nav>
+    <a href="#contacto" class="nav-cta">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+      Solicitar Cotización
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-nav">
+      <a href="#inicio"     class="mobile-link">Inicio</a>
+      <a href="#servicios"  class="mobile-link">Cerraduras</a>
+      <a href="#beneficios" class="mobile-link">Beneficios</a>
+      <a href="#proceso"    class="mobile-link">Proceso</a>
+      <a href="#contacto"   class="mobile-link">Contacto</a>
+    </nav>
+    <a href="#contacto" class="mobile-cta">Solicitar Cotización</a>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  HERO                                                       -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section id="inicio" class="hero">
+
+  <div class="hero-bg">
+    <div class="hero-bg-photo">
+      <img
+        src="imagenes/cerradura-facial-instalada.jpg"
+        alt="Cerradura digital ARMOR con reconocimiento facial instalada en una puerta"
+        aria-hidden="true"
+        loading="eager"
+      />
+    </div>
+    <div class="hero-gradient-overlay"></div>
+    <div class="hero-grid-overlay"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+    <div class="hero-speed-lines"></div>
+  </div>
+
+  <div class="hero-bubbles" id="heroBubbles" aria-hidden="true"></div>
+  <canvas id="heroCanvas" class="hero-canvas"></canvas>
+
+  <div class="hero-container">
+
+    <div class="hero-copy" id="heroCopy">
+
+      <div class="hero-badge" id="heroBadge">
+        <span class="badge-live"></span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f2a94e" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Seguridad Premium — <strong>Mexicali, Baja California</strong>
+      </div>
+
+      <h1 class="hero-title" id="heroTitle">
+        <span class="ht-top">Cerraduras de Alta Seguridad para Casa y Negocio</span>
+        <span class="ht-main">Lo Que Más Te Importa<br/>Merece Blindaje Real</span>
+        <span class="ht-accent">Tecnología Biométrica · Instalación Profesional · Garantía Real</span>
+      </h1>
+
+      <p class="hero-subtitle" id="heroSubtitle">
+        En ARMOR vendemos e instalamos cerraduras de alta seguridad con tecnología biométrica:
+        reconocimiento facial, huella dactilar, clave numérica, tarjeta RFID y control desde tu
+        celular. Soluciones premium para proteger lo que más te importa, con la calidad y
+        atención que tu hogar o negocio merece.
+      </p>
+
+      <div class="hero-ctas" id="heroCtas">
+        <a href="#contacto" class="btn-primary-hero">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+          Solicitar Cotización
+        </a>
+        <a href="#servicios" class="btn-secondary-hero">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          Ver Cerraduras
+        </a>
+      </div>
+
+      <div class="hero-trust" id="heroTrust">
+        <div class="trust-pill">
+          <svg width="13" height="13" viewBox="0 0 24 24" stroke="#4ade80" stroke-width="2.5" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+          Cerraduras biométricas
+        </div>
+        <div class="trust-pill">
+          <svg width="13" height="13" viewBox="0 0 24 24" stroke="#4ade80" stroke-width="2.5" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+          Reconocimiento facial y huella
+        </div>
+        <div class="trust-pill">
+          <svg width="13" height="13" viewBox="0 0 24 24" stroke="#4ade80" stroke-width="2.5" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+          Instalación profesional
+        </div>
+        <div class="trust-pill">
+          <svg width="13" height="13" viewBox="0 0 24 24" stroke="#4ade80" stroke-width="2.5" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+          Cobertura en Mexicali, BC
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual" id="heroVisual">
+
+      <div class="hero-img-frame" id="heroMainCard">
+        <div class="hero-img-inner">
+          <img
+            src="imagenes/hero-cerradura-inteligente.jpg"
+            alt="Cerradura inteligente instalada en una puerta, controlada desde una app móvil"
+            loading="eager"
+          />
+          <div class="hero-img-overlay"></div>
+        </div>
+        <div class="hero-img-badge">
+          <div class="hib-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#4ade80"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10" stroke="white" stroke-width="2" fill="none"/></svg>
+          </div>
+          <div>
+            <div class="hib-title">Cerradura Inteligente</div>
+            <div class="hib-sub">● Control desde tu app móvil</div>
+          </div>
+        </div>
+        <div class="img-bubble ib1"></div>
+        <div class="img-bubble ib2"></div>
+        <div class="img-bubble ib3"></div>
+      </div>
+
+      <div class="float-card fc-price" id="fcPrice">
+        <div class="fc-icon fc-icon-blue">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e08a2e" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="fc-body">
+          <span class="fc-label">Métodos de acceso</span>
+          <span class="fc-value">5 en 1</span>
+          <span class="fc-note">Facial, huella, clave, tarjeta y llave</span>
+        </div>
+      </div>
+
+      <div class="float-card fc-speed" id="fcSpeed">
+        <div class="fc-icon fc-icon-cyan">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16293f" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <div class="fc-body">
+          <span class="fc-label">Instalación</span>
+          <span class="fc-value-big">Profesional</span>
+          <span class="fc-note">Con garantía en el trabajo</span>
+        </div>
+      </div>
+
+      <div class="float-card fc-rating" id="fcRating">
+        <div class="fc-icon fc-icon-blue">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e08a2e" stroke-width="2"><path d="M23 19v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><circle cx="9" cy="7" r="4"/><path d="M1 19v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"/></svg>
+        </div>
+        <div class="fc-body">
+          <span class="fc-label">Cámara integrada</span>
+          <span class="fc-value-big">Ve quién toca</span>
+          <span class="fc-note">Video desde tu app móvil</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="hero-scroll-cue" id="heroScrollCue">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span>Desliza</span>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  ESPECIALIDADES BAR                                         -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div class="brands-bar reveal-up">
+  <div class="brands-inner">
+    <span class="brands-label">Especializados en:</span>
+    <div class="brands-chips">
+      <span class="brand-chip">🔒 Cerraduras Biométricas</span>
+      <span class="brand-sep">·</span>
+      <span class="brand-chip">🤳 Reconocimiento Facial</span>
+      <span class="brand-sep">·</span>
+      <span class="brand-chip">🔑 Cerraduras Mecánicas</span>
+      <span class="brand-sep">·</span>
+      <span class="brand-chip">🚪 Puertas de Seguridad</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  SERVICIOS / PRODUCTOS                                      -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section id="servicios" class="section-dark">
+  <div class="sec-container">
+    <div class="sec-header reveal-up">
+      <div class="sec-badge">Nuestras Cerraduras</div>
+      <h2 class="sec-title">Tecnología de Punta<br/><em class="em-electric">Para Cada Necesidad</em></h2>
+      <p class="sec-subtitle">Vendemos e instalamos cerraduras de alta seguridad que cumplen con los más altos estándares del mercado, con atención personalizada para cada cliente.</p>
+    </div>
+    <div class="services-grid services-grid-3">
+
+      <article class="service-card stagger-card">
+        <div class="sc-img-wrap">
+          <img src="imagenes/cerradura-facial-instalada.jpg"
+               alt="Cerradura digital con reconocimiento facial y cámara de seguridad integrada"
+               loading="lazy" />
+          <div class="sc-img-overlay"></div>
+          <span class="sc-img-tag">Más solicitado</span>
+        </div>
+        <div class="sc-body">
+          <div class="sc-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e08a2e" stroke-width="1.8"><path d="M23 19v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><circle cx="9" cy="7" r="4"/><path d="M1 19v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"/></svg>
+          </div>
+          <h3>Reconocimiento Facial + Cámara</h3>
+          <p>Cerradura digital con cámara de seguridad integrada: ve quién toca tu puerta y abre con reconocimiento facial en segundos.</p>
+          <ul class="sc-list">
+            <li>Cámara de seguridad integrada</li>
+            <li>Desbloqueo facial instantáneo</li>
+            <li>Video accesible desde tu app</li>
+            <li>Ideal para casa y negocio</li>
+          </ul>
+          <a href="#contacto" class="sc-cta">Solicitar cotización →</a>
+        </div>
+      </article>
+
+      <article class="service-card stagger-card">
+        <div class="sc-img-wrap">
+          <img src="imagenes/cerradura-5en1-kit-completo.jpg"
+               alt="Cerradura digital 5 en 1 con huella dactilar, teclado, tarjeta RFID y app móvil"
+               loading="lazy" />
+          <div class="sc-img-overlay"></div>
+        </div>
+        <div class="sc-body">
+          <div class="sc-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e08a2e" stroke-width="1.8"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/><circle cx="12" cy="16" r="1.5"/></svg>
+          </div>
+          <h3>Cerraduras Digitales 5 en 1</h3>
+          <p>Un solo sistema, cinco formas de abrir: huella dactilar, clave numérica, tarjeta RFID, app móvil y llave mecánica de respaldo.</p>
+          <ul class="sc-list">
+            <li>Huella dactilar de alta precisión</li>
+            <li>Teclado numérico y tarjeta RFID</li>
+            <li>Control por app móvil (WiFi)</li>
+            <li>Llave mecánica de respaldo</li>
+          </ul>
+          <a href="#contacto" class="sc-cta">Solicitar cotización →</a>
+        </div>
+      </article>
+
+      <article class="service-card stagger-card">
+        <div class="sc-img-wrap">
+          <img src="imagenes/cerradura-huella-dactilar.jpg"
+               alt="Cerradura biométrica con lector de huella dactilar y app móvil"
+               loading="lazy" />
+          <div class="sc-img-overlay"></div>
+        </div>
+        <div class="sc-body">
+          <div class="sc-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e08a2e" stroke-width="1.8"><path d="M12 3a9 9 0 0 0-9 9c0 3 1 5 2 6M12 3a9 9 0 0 1 9 9c0 2-.3 3.5-1 5"/><path d="M12 7a5 5 0 0 0-5 5c0 2.5.5 4 1.5 5.5"/><path d="M12 7a5 5 0 0 1 5 5c0 1.2-.1 2.2-.4 3"/><path d="M9.5 20c-.4-.8-1-2-1.2-4a3.7 3.7 0 0 1 7.4 0 22 22 0 0 1-.3 2"/></svg>
+          </div>
+          <h3>Cerraduras Biométricas</h3>
+          <p>Acceso instantáneo con tu huella dactilar. Registra múltiples usuarios y olvídate de cargar llaves.</p>
+          <ul class="sc-list">
+            <li>Lectura de huella de alta precisión</li>
+            <li>Múltiples usuarios registrados</li>
+            <li>Respaldo con clave y tarjeta</li>
+            <li>Notificación de acceso a tu app</li>
+          </ul>
+          <a href="#contacto" class="sc-cta">Solicitar cotización →</a>
+        </div>
+      </article>
+
+      <article class="service-card stagger-card">
+        <div class="sc-img-wrap">
+          <img src="imagenes/cilindro-alta-seguridad.jpg"
+               alt="Cilindro y cerradura mecánica de alta seguridad"
+               loading="lazy" />
+          <div class="sc-img-overlay"></div>
+        </div>
+        <div class="sc-body">
+          <div class="sc-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e08a2e" stroke-width="1.8"><circle cx="12" cy="9" r="5"/><path d="M12 14v7M9 18h6M9 21h6"/></svg>
+          </div>
+          <h3>Cerraduras Mecánicas de Alta Seguridad</h3>
+          <p>Cilindros y cerraduras mecánicas resistentes a ganzuado y bumping, para quienes prefieren la confiabilidad de lo mecánico.</p>
+          <ul class="sc-list">
+            <li>Cilindros anti-ganzúa</li>
+            <li>Cerrojos de alta resistencia</li>
+            <li>Compatibles con chapas existentes</li>
+            <li>Instalación y ajuste incluidos</li>
+          </ul>
+          <a href="#contacto" class="sc-cta">Solicitar cotización →</a>
+        </div>
+      </article>
+
+      <article class="service-card stagger-card">
+        <div class="sc-img-wrap">
+          <img src="imagenes/puerta-seguridad-cerradura.jpg"
+               alt="Puerta de seguridad con cerradura de alta gama instalada"
+               loading="lazy" />
+          <div class="sc-img-overlay"></div>
+        </div>
+        <div class="sc-body">
+          <div class="sc-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e08a2e" stroke-width="1.8"><rect x="4" y="2" width="16" height="20" rx="1"/><circle cx="15" cy="12" r="1"/></svg>
+          </div>
+          <h3>Puertas y Accesorios de Seguridad</h3>
+          <p>Reforzamos tu punto de acceso completo: puertas de seguridad, cerraderos y herrajes de alta resistencia.</p>
+          <ul class="sc-list">
+            <li>Puertas de seguridad</li>
+            <li>Herrajes y cerraderos reforzados</li>
+            <li>Refuerzos anti-forzado</li>
+            <li>Asesoría según tu puerta actual</li>
+          </ul>
+          <a href="#contacto" class="sc-cta">Solicitar cotización →</a>
+        </div>
+      </article>
+
+      <article class="service-card stagger-card">
+        <div class="sc-img-wrap">
+          <img src="imagenes/cerradura-digital-puerta-madera.jpg"
+               alt="Instalación profesional de cerradura digital en puerta residencial"
+               loading="lazy" />
+          <div class="sc-img-overlay"></div>
+        </div>
+        <div class="sc-body">
+          <div class="sc-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e08a2e" stroke-width="1.8"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Instalación Profesional y Asesoría</h3>
+          <p>Evaluamos tu puerta y necesidades para recomendarte el sistema ideal, con instalación profesional y garantía en el trabajo.</p>
+          <ul class="sc-list">
+            <li>Evaluación sin compromiso</li>
+            <li>Instalación profesional</li>
+            <li>Explicación completa del uso</li>
+            <li>Garantía en la instalación</li>
+          </ul>
+          <a href="#contacto" class="sc-cta">Solicitar cotización →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  PROBLEMAS QUE RESOLVEMOS                                   -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="section-solutions reveal-up">
+  <div class="sec-container">
+    <div class="sec-header reveal-up">
+      <div class="sec-badge">Problemas Comunes</div>
+      <h2 class="sec-title">Soluciones Reales<br/><em class="em-electric">para tu Seguridad</em></h2>
+      <p class="sec-subtitle">Atendemos las necesidades de seguridad más frecuentes en hogares y negocios de Mexicali, Baja California.</p>
+    </div>
+    <div class="solutions-grid">
+      <div class="solution-item stagger-card">
+        <div class="sol-icon">🔑</div>
+        <h4>Perdiste u olvidaste tus llaves</h4>
+        <p>Con acceso biométrico o por app, tu llave nunca se pierde ni se olvida.</p>
+      </div>
+      <div class="solution-item stagger-card">
+        <div class="sol-icon">🎥</div>
+        <h4>No sabes quién toca tu puerta</h4>
+        <p>Cerraduras con cámara integrada te muestran quién está afuera antes de abrir.</p>
+      </div>
+      <div class="solution-item stagger-card">
+        <div class="sol-icon">🏢</div>
+        <h4>Controlar accesos de empleados</h4>
+        <p>Códigos temporales y tarjetas RFID para dar acceso solo a quien tú decidas.</p>
+      </div>
+      <div class="solution-item stagger-card">
+        <div class="sol-icon">🚪</div>
+        <h4>Tu puerta es un punto débil</h4>
+        <p>Reforzamos con puertas y herrajes de seguridad de alta resistencia.</p>
+      </div>
+      <div class="solution-item stagger-card">
+        <div class="sol-icon">🔧</div>
+        <h4>Tu cerradura actual es anticuada</h4>
+        <p>Actualízala a tecnología biométrica sin necesidad de cambiar tu puerta.</p>
+      </div>
+      <div class="solution-item stagger-card">
+        <div class="sol-icon">🏠</div>
+        <h4>Mismo estándar en casa y negocio</h4>
+        <p>Instalamos el mismo nivel de seguridad premium en cualquier tipo de propiedad.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  BENEFICIOS                                                 -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section id="beneficios" class="section-benefits">
+  <div class="benefits-glow-left"></div>
+  <div class="benefits-glow-right"></div>
+  <div class="sec-container">
+    <div class="sec-header reveal-up">
+      <div class="sec-badge">Por Qué Elegir ARMOR</div>
+      <h2 class="sec-title">Seguridad Premium<br/><em class="em-electric">Pensada para Ti</em></h2>
+      <p class="sec-subtitle">Aprovechamos tecnología avanzada y experiencia en el sector para proteger lo que más te importa.</p>
+    </div>
+    <div class="benefits-grid">
+
+      <div class="benefit-card stagger-card">
+        <div class="benefit-icon-wrap bi-blue">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e08a2e" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h4>Calidad Certificada</h4>
+        <p>Trabajamos con cerraduras que cumplen los más altos estándares de seguridad del mercado.</p>
+      </div>
+
+      <div class="benefit-card stagger-card">
+        <div class="benefit-icon-wrap bi-blue">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e08a2e" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></svg>
+        </div>
+        <h4>Atención Personalizada</h4>
+        <p>Entendemos las necesidades específicas de cada cliente antes de recomendar un sistema.</p>
+      </div>
+
+      <div class="benefit-card stagger-card">
+        <div class="benefit-icon-wrap bi-green">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3fae62" stroke-width="2"><path d="M23 19v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><circle cx="9" cy="7" r="4"/><path d="M1 19v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"/></svg>
+        </div>
+        <h4>Tecnología Avanzada</h4>
+        <p>Reconocimiento facial, biometría y control remoto integrados en un solo sistema.</p>
+      </div>
+
+      <div class="benefit-card stagger-card">
+        <div class="benefit-icon-wrap bi-cyan">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e08a2e" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h4>Experiencia en el Sector</h4>
+        <p>Conocimiento técnico real en cerrajería e instalación de sistemas de seguridad.</p>
+      </div>
+
+      <div class="benefit-card stagger-card">
+        <div class="benefit-icon-wrap bi-yellow">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e08a2e" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 8.5 9 9 5-.5 9-4 9-9V7z"/></svg>
+        </div>
+        <h4>Marca Premium</h4>
+        <p>Una opción de nivel superior frente a las cerraduras convencionales del mercado.</p>
+      </div>
+
+      <div class="benefit-card stagger-card">
+        <div class="benefit-icon-wrap bi-purple">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2a4568" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h4>Servicio al Cliente Excepcional</h4>
+        <p>Te acompañamos antes, durante y después de tu instalación.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  PROMO — COTIZACIÓN                                         -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="section-promo reveal-up">
+  <div class="sec-container">
+    <div class="promo-inner">
+      <div class="promo-left">
+        <div class="promo-eyebrow">🔒 Para Hogares y Negocios en Mexicali, BC</div>
+        <h2 class="promo-title">Blinda tu Puerta<br/><span class="promo-price-text">Con Tecnología Real</span></h2>
+        <p class="promo-body">Cuéntanos qué necesitas proteger y te recomendamos el sistema de cerradura ideal para tu hogar o negocio.<br/><strong>Cotización clara, sin compromiso.</strong></p>
+        <div class="promo-checks">
+          <span class="pc-item"><svg width="14" height="14" viewBox="0 0 24 24" stroke="#4ade80" stroke-width="2.5" fill="none"><polyline points="20 6 9 17 4 12"/></svg> Cerraduras biométricas</span>
+          <span class="pc-item"><svg width="14" height="14" viewBox="0 0 24 24" stroke="#4ade80" stroke-width="2.5" fill="none"><polyline points="20 6 9 17 4 12"/></svg> Instalación profesional</span>
+          <span class="pc-item"><svg width="14" height="14" viewBox="0 0 24 24" stroke="#4ade80" stroke-width="2.5" fill="none"><polyline points="20 6 9 17 4 12"/></svg> Cotización sin compromiso</span>
+        </div>
+      </div>
+      <div class="promo-right">
+        <div class="promo-card">
+          <div class="promo-card-header">Cotiza tu cerradura</div>
+          <div class="promo-card-icon">🔒</div>
+          <div class="promo-card-tagline">Cotización</div>
+          <div class="promo-card-pill">✅ Sin compromiso</div>
+          <a href="#contacto" class="btn-primary-hero promo-btn">Solicitar Cotización</a>
+          <div class="promo-card-eta">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Respondemos tu solicitud a la brevedad
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  PROCESO                                                    -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section id="proceso" class="section-dark">
+  <div class="sec-container">
+    <div class="sec-header reveal-up">
+      <div class="sec-badge">Cómo Funciona</div>
+      <h2 class="sec-title">Tu Puerta Blindada<br/><em class="em-electric">en 4 Pasos Simples</em></h2>
+      <p class="sec-subtitle">Proceso claro y sin complicaciones, desde el primer contacto hasta la instalación final.</p>
+    </div>
+    <div class="process-wrap process-wrap-4">
+      <div class="process-step stagger-card">
+        <div class="ps-number">01</div>
+        <div class="ps-connector"></div>
+        <div class="ps-content">
+          <div class="ps-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e08a2e" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h4>Contáctanos</h4>
+          <p>Completa el formulario contándonos qué quieres proteger: tu casa, negocio u otra propiedad.</p>
+        </div>
+      </div>
+      <div class="process-step stagger-card">
+        <div class="ps-number">02</div>
+        <div class="ps-connector"></div>
+        <div class="ps-content">
+          <div class="ps-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e08a2e" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+          <h4>Evaluamos tu Necesidad</h4>
+          <p>Analizamos tu puerta y te recomendamos el sistema ideal: facial, huella, tarjeta o mecánico.</p>
+        </div>
+      </div>
+      <div class="process-step stagger-card">
+        <div class="ps-number">03</div>
+        <div class="ps-connector"></div>
+        <div class="ps-content">
+          <div class="ps-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f2a94e" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+          <h4>Cotización Clara</h4>
+          <p>Te enviamos una cotización detallada, sin letras chiquitas ni sorpresas.</p>
+        </div>
+      </div>
+      <div class="process-step stagger-card">
+        <div class="ps-number">04</div>
+        <div class="ps-content">
+          <div class="ps-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3fae62" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+          <h4>Instalación Profesional</h4>
+          <p>Instalamos tu cerradura, la probamos contigo y te explicamos cómo usarla al 100%.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  COBERTURA Y TECNOLOGÍA                                     -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="section-logistics">
+  <div class="sec-container">
+    <div class="logistics-wrap reveal-up">
+      <div class="logistics-left">
+        <div class="sec-badge">Cobertura y Tecnología</div>
+        <h2 class="sec-title" style="text-align:left;">Servicio en <em class="em-electric">Mexicali</em><br/>Baja California</h2>
+        <p class="logistics-desc">Instalamos y damos mantenimiento a cerraduras de alta seguridad en hogares y negocios de Mexicali, BC, con múltiples tecnologías de acceso disponibles.</p>
+        <div class="zones-grid">
+          <div class="zone-pill"><span class="z-dot"></span>Desbloqueo Facial</div>
+          <div class="zone-pill"><span class="z-dot"></span>Huella Dactilar</div>
+          <div class="zone-pill"><span class="z-dot"></span>Clave Numérica</div>
+          <div class="zone-pill"><span class="z-dot"></span>Tarjeta RFID</div>
+          <div class="zone-pill"><span class="z-dot"></span>App Móvil</div>
+          <div class="zone-pill"><span class="z-dot"></span>Llave Mecánica</div>
+          <div class="zone-pill"><span class="z-dot"></span>Claves Temporales</div>
+          <div class="zone-pill"><span class="z-dot"></span>Video en Tiempo Real</div>
+        </div>
+      </div>
+      <div class="logistics-right">
+        <div class="logistics-card">
+          <div class="lc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e08a2e" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+          <div><h5>Agenda tu Cita</h5><p>Coordinamos la visita técnica en el horario que mejor te convenga.</p></div>
+        </div>
+        <div class="logistics-card">
+          <div class="lc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e08a2e" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></svg></div>
+          <div><h5>Atención Personalizada</h5><p>Evaluamos tu caso particular antes de recomendar un sistema.</p></div>
+        </div>
+        <div class="logistics-card">
+          <div class="lc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e08a2e" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div><h5>Cerraduras y Puertas de Seguridad</h5><p>Especialistas en sistemas biométricos, mecánicos y refuerzos de acceso.</p></div>
+        </div>
+        <div class="logistics-card">
+          <div class="lc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e08a2e" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <div><h5>Solicita tu Cotización</h5><p>Completa el formulario de contacto y te respondemos a la brevedad.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  AUTHORITY                                                  -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="section-authority">
+  <div class="authority-bg-photo">
+    <img
+      src="imagenes/puerta-seguridad-cerradura.jpg"
+      alt=""
+      aria-hidden="true"
+      loading="lazy"
+    />
+  </div>
+  <div class="authority-bg-glow"></div>
+  <div class="sec-container">
+    <div class="authority-inner reveal-up">
+      <div class="authority-lightning">🔒</div>
+      <h2 class="authority-title">Seguridad Premium<br/><span class="em-yellow">Para lo Que Más Importa</span></h2>
+      <p class="authority-desc">En ARMOR combinamos tecnología avanzada y experiencia en el sector para ofrecerte cerraduras que cumplen con los más altos estándares de seguridad, con un servicio al cliente enfocado en entender exactamente lo que necesitas proteger.</p>
+      <div class="stats-row">
+        <div class="stat-box"><span class="stat-num">5 en 1</span><span class="stat-lbl">Métodos de acceso combinados</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-box"><span class="stat-num">Facial</span><span class="stat-lbl">Reconocimiento en segundos</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-box"><span class="stat-num">Video</span><span class="stat-lbl">Cámara integrada disponible</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-box"><span class="stat-num">Premium</span><span class="stat-lbl">Estándar de alta seguridad</span></div>
+      </div>
+      <a href="#contacto" class="btn-primary-hero authority-btn">
+        Solicitar Cotización
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  CONTACTO                                                   -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section id="contacto" class="section-contact">
+  <div class="sec-container">
+    <div class="sec-header reveal-up">
+      <div class="sec-badge">Contáctanos</div>
+      <h2 class="sec-title">¿Listo para Blindar<br/><em class="em-electric">tu Puerta?</em></h2>
+      <p class="sec-subtitle">Completa el formulario y cuéntanos qué necesitas proteger. Te respondemos con una cotización clara para tu hogar o negocio en Mexicali, BC.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal-up">
+        <div class="contact-highlight-card">
+          <div class="chc-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e08a2e" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="chc-text">
+            <span class="chc-label">Cotización Personalizada</span>
+            <span class="chc-title">Completa el formulario</span>
+          </div>
+        </div>
+        <div class="contact-details">
+          <div class="cd-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e08a2e" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Mexicali, Baja California, México</span></div>
+        </div>
+        <p class="contact-note">Actualmente atendemos solicitudes únicamente a través del formulario de contacto. Cuéntanos qué necesitas proteger y te responderemos con los siguientes pasos.</p>
+      </div>
+      <div class="contact-form-wrap reveal-up">
+        <form class="contact-form" id="contactForm">
+          <h3 class="form-title">Solicita tu Cotización</h3>
+          <div class="form-row-2">
+            <div class="form-group"><label for="f-nombre">Nombre completo *</label><input type="text" id="f-nombre" name="nombre" placeholder="Tu nombre" required /></div>
+            <div class="form-group"><label for="f-tel">Teléfono / Correo de contacto *</label><input type="text" id="f-tel" name="contacto" placeholder="¿Cómo te contactamos?" required /></div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="f-propiedad">Tipo de propiedad *</label>
+              <select id="f-propiedad" name="propiedad" required>
+                <option value="">Selecciona una opción</option>
+                <option value="casa">Casa</option>
+                <option value="negocio">Negocio</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="f-cerradura">Cerradura de interés</label>
+              <select id="f-cerradura" name="cerradura">
+                <option value="">Selecciona una opción</option>
+                <option value="facial">Reconocimiento facial + cámara</option>
+                <option value="5en1">Digital 5 en 1</option>
+                <option value="huella">Biométrica de huella</option>
+                <option value="mecanica">Mecánica de alta seguridad</option>
+                <option value="puerta">Puerta de seguridad</option>
+                <option value="no-seguro">No estoy seguro / necesito asesoría</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group"><label for="f-msg">Cuéntanos qué necesitas proteger</label><textarea id="f-msg" name="mensaje" rows="3" placeholder="Describe tu puerta, propiedad o necesidad de seguridad"></textarea></div>
+          <button type="submit" class="btn-primary-hero form-btn">Solicitar Cotización</button>
+          <p class="form-privacy">Tu información es confidencial y solo se usa para responder tu solicitud.</p>
+
+          <div class="form-success" id="formSuccess">
+            <div class="form-success-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3fae62" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h4>¡Solicitud registrada!</h4>
+            <p>Gracias por contactar a ARMOR. Hemos registrado los datos de tu cotización.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="map-wrap reveal-up">
+      <div class="map-header">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e08a2e" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Mexicali, Baja California, México</span>
+      </div>
+      <iframe title="Cobertura ARMOR — Mexicali, Baja California"
+        src="https://www.google.com/maps?q=Mexicali%2C%20Baja%20California%2C%20M%C3%A9xico&output=embed"
+        width="100%" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  CTA FINAL                                                  -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="section-cta-final reveal-up">
+  <div class="sec-container">
+    <div class="cta-final-inner">
+      <h2 class="cta-final-title">¿Listo para proteger<br/>lo que más te importa?</h2>
+      <p class="cta-final-subtitle">Contáctanos y recibe una cotización personalizada para instalar cerraduras de alta seguridad en tu hogar o negocio en Mexicali, BC.</p>
+      <div class="cta-final-buttons">
+        <a href="#contacto" class="cta-btn-wa">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Solicitar Cotización
+        </a>
+        <a href="#servicios" class="cta-btn-call">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          Ver Cerraduras
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  FOOTER                                                    -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-top-line"></div>
+  <div class="sec-container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="imagenes/logo-icon.png" alt="Escudo ARMOR" class="footer-logo-img" />
+          <div class="nav-logo-text">
+            <span class="nav-brand-name" style="color:rgba(255,255,255,0.45);">Cerraduras de Alta Seguridad</span>
+            <span class="nav-brand-mg" style="color:white;">ARMOR</span>
+          </div>
+        </div>
+        <p class="footer-desc">Venta e instalación de cerraduras de alta seguridad para hogares y negocios: sistemas biométricos, reconocimiento facial, huella digital y cerraduras mecánicas de alto estándar en Mexicali, Baja California.</p>
+        <div class="footer-brands-pill"><span>🔒 Biométricas</span><span class="fp-sep">·</span><span>🤳 Facial</span><span class="fp-sep">·</span><span>🔑 Mecánicas</span></div>
+      </div>
+      <div class="footer-col">
+        <h5>Cerraduras</h5>
+        <ul>
+          <li><a href="#servicios">Reconocimiento Facial</a></li>
+          <li><a href="#servicios">Digitales 5 en 1</a></li>
+          <li><a href="#servicios">Biométricas de Huella</a></li>
+          <li><a href="#servicios">Mecánicas de Alta Seguridad</a></li>
+          <li><a href="#servicios">Puertas de Seguridad</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Navegación</h5>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contacto</h5>
+        <div class="footer-contact-items">
+          <div class="fci"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f2a94e" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Mexicali, Baja California, México</span></div>
+          <div class="fci"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f2a94e" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><a href="#contacto">Solicitar cotización</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ARMOR — Cerraduras de Alta Seguridad. Mexicali, BC. Todos los derechos reservados.</p>
+      <p class="footer-tagline">🔒 Seguridad Premium para tu Hogar y Negocio</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Botón flotante de WhatsApp -->
+<!-- NOTA PARA DESARROLLO: reemplaza TU_NUMERO_WHATSAPP con el número real de ARMOR
+     (formato internacional sin espacios ni signos, ej. 526861234567) antes de publicar.
+     El formulario de contacto (#contactForm) tampoco está conectado a un backend real
+     (correo, CRM o servicio como Formspree/EmailJS); al enviarlo solo se muestra una
+     confirmación visual en el navegador (ver main.js). Conéctalo a un canal real antes
+     de recibir clientes en producción. -->
+<a href="https://wa.me/TU_NUMERO_WHATSAPP?text=Hola%2C%20quiero%20cotizar%20una%20cerradura%20de%20alta%20seguridad"
+   class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <div class="wa-pulse-ring"></div>
+  <div class="wa-pulse-ring wa-pulse-ring-2"></div>
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.089.534 4.052 1.472 5.761L.057 23.882l6.304-1.654C8.01 23.041 9.965 23.5 12 23.5c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.5c-1.94 0-3.757-.52-5.317-1.427l-.381-.226-3.96 1.039 1.057-3.855-.247-.397A9.448 9.448 0 0 1 2.5 12c0-5.238 4.262-9.5 9.5-9.5s9.5 4.262 9.5 9.5-4.262 9.5-9.5 9.5z"/></svg>
+  <span class="wa-tooltip">¡Escríbenos por WhatsApp!</span>
+</a>
+
+<script src="main.js"></script>
+</body>
+</html>
