@@ -737,6 +737,15 @@
               </select>
             </div>
           </div>
+          <div class="form-group">
+            <label for="f-tipo-puerta">¿En qué tipo de puerta la quieres instalar?</label>
+            <select id="f-tipo-puerta" name="tipo_puerta">
+              <option value="">Selecciona una opción</option>
+              <option value="madera">Puerta de Madera</option>
+              <option value="metal">Puerta de Metal</option>
+              <option value="seguridad">Puerta de Seguridad</option>
+            </select>
+          </div>
           <div class="form-group"><label for="f-msg">Cuéntanos qué necesitas proteger</label><textarea id="f-msg" name="mensaje" rows="3" placeholder="Describe tu puerta, propiedad o necesidad de seguridad"></textarea></div>
           <button type="submit" class="btn-primary-hero form-btn">Solicitar Cotización</button>
           <p class="form-privacy">Tu información es confidencial y solo se usa para responder tu solicitud.</p>
@@ -839,10 +848,8 @@
 </footer>
 
 <!-- Botón flotante de WhatsApp -->
-<!-- NOTA PARA DESARROLLO: El formulario de contacto (#contactForm) no está conectado a un
-     backend real (correo, CRM o servicio como Formspree/EmailJS); al enviarlo solo se muestra
-     una confirmación visual en el navegador (ver main.js). Conéctalo a un canal real antes
-     de recibir clientes en producción. -->
+<!-- NOTA PARA DESARROLLO: El formulario de contacto (#contactForm) redirige a WhatsApp con los
+     datos capturados (ver main.js); no queda registrado en ningún backend/CRM aparte de eso. -->
 <a href="https://wa.me/526864327427?text=Hola%2C%20quiero%20cotizar%20una%20cerradura%20de%20alta%20seguridad"
    class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
   <div class="wa-pulse-ring"></div>

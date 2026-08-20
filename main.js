@@ -173,11 +173,42 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  /* ── Contact form (no backend wired — see index.html note) */
+  /* ── Contact form: envía los datos por WhatsApp (ver index.html) */
+  const WHATSAPP_NUMBER = '526864327427';
   const form = document.getElementById('contactForm');
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
+      const data = new FormData(form);
+      const cerraduraLabels = {
+        facial: 'Reconocimiento facial + cámara',
+        '5en1': 'Digital 5 en 1',
+        huella: 'Biométrica de huella',
+        mecanica: 'Mecánica de alta seguridad',
+        puerta: 'Accesorios para puerta de seguridad',
+        'no-seguro': 'No estoy seguro / necesito asesoría',
+      };
+      const puertaLabels = {
+        madera: 'Puerta de Madera',
+        metal: 'Puerta de Metal',
+        seguridad: 'Puerta de Seguridad',
+      };
+      const lines = [
+        'Hola, quiero solicitar una cotización con ARMOR:',
+        `Nombre: ${data.get('nombre') || '-'}`,
+        `Teléfono / Correo: ${data.get('contacto') || '-'}`,
+        `Tipo de propiedad: ${data.get('propiedad') || '-'}`,
+      ];
+      const cerradura = data.get('cerradura');
+      if (cerradura) lines.push(`Cerradura de interés: ${cerraduraLabels[cerradura] || cerradura}`);
+      const tipoPuerta = data.get('tipo_puerta');
+      if (tipoPuerta) lines.push(`Tipo de puerta: ${puertaLabels[tipoPuerta] || tipoPuerta}`);
+      const mensaje = data.get('mensaje');
+      if (mensaje) lines.push(`Mensaje: ${mensaje}`);
+
+      const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join('\n'))}`;
+      window.open(waUrl, '_blank', 'noopener');
+
       const successBox = document.getElementById('formSuccess');
       form.classList.add('is-hidden');
       if (successBox) successBox.classList.add('is-visible');
